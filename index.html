@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darf ich hier parken?</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body {font-family: 'Courier New', Courier, monospace}
+        #map { cursor: default; display:flex; height: 50vh; width: 100%; justify-content: center; }
+        #info { padding: 10px; font-size: 16px; padding: 10px; border-radius: 5px; position: inherit;}
+    </style>
+</head>
+<body>
+    <h2>Darf ich hier (nicht) parken?</h2>
+    <p>Klick auf eine Straße, um zu prüfen, was OpenStreetMap über die Parksituation weiß.</p>
+    <div id="map"></div>
+    <p style="font-size: xx-small; margin-top: 1px;">eher proof of concept also alles noch nicht so schön</p>
+    <div id="info">📍 Wähle eine Position auf der Karte.</div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
